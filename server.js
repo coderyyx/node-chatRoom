@@ -2,6 +2,7 @@ var  http=require('http');
 var path=require('path');
 var fs=require('fs');
 var mime=require('mime');
+var chatServer=require('./lib/chat_server.js');
 var cache={};
 
 function send404(response){
@@ -50,3 +51,6 @@ var server=http.createServer(function(request,response){
 server.listen(8081,function(){
     console.log('server start...');
 })
+
+chatServer.listen(server);
+
