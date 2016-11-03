@@ -12,7 +12,27 @@ body{
     background-color:#ddd;
     margin-bottom:1em;
 }
+#room-list{
+    float:right;
+    width:100px;
+    height: 300px;
+    overflow: auto;
+}
+#room-list div{
+    border-bottom: 1px solid #eee;
+}
+#room-list div:hover{
+    background-color: #dddddd;
+}
+#send-message{
+    width:700px;
+    margin-bottom: 1em;
+    margin-right: 1em;
 
+}
+#help{
+    font-size: 10px;
+}
 #message{
     width:600px;
     height:300px;
